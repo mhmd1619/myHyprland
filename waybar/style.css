@@ -1,0 +1,233 @@
+@define-color background #151515;
+@define-color color1 #5AAAFF;
+@define-color color2 #E56399;
+@define-color color3 #7FD1B9;
+@define-color color4 #D3A588;
+@define-color color5 #ddd;
+
+* {
+  font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#window {
+  background-color: @background;
+  color: @color5;
+  margin-top: 5px;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+window#waybar.empty #window {
+  background: rgba(12, 12, 12, 0);
+}
+
+window#waybar {
+  background-color: transparent;
+  border-bottom: 0px solid rgba(100, 114, 125, 0.5);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+window#waybar.termite {
+  background-color: #3f3f3f;
+}
+
+window#waybar.chromium {
+  background-color: #000000;
+  border: none;
+}
+
+#workspaces button {
+  margin-top: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 10px 15px;
+  background-color: @background;
+  color: @color5;
+  border-radius: 20px;
+}
+
+#workspaces button:hover:nth-child(4n + 1),
+#workspaces button.active:nth-child(4n + 1) {
+  background-color: @color1;
+  color: @background;
+}
+
+#workspaces button:hover:nth-child(4n + 2),
+#workspaces button.active:nth-child(4n + 2) {
+  background-color: @color2;
+  color: @background;
+}
+
+#workspaces button:hover:nth-child(4n + 3),
+#workspaces button.active:nth-child(4n + 3) {
+  background-color: @color3;
+  color: @background;
+}
+
+#workspaces button:hover:nth-child(4n + 4),
+#workspaces button.active:nth-child(4n + 4) {
+  background-color: @color4;
+  color: @background;
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+#workspaces button:nth-child(4n + 1) {
+  color: @color1;
+}
+
+#workspaces button:nth-child(4n + 2) {
+  color: @color2;
+}
+
+#workspaces button:nth-child(4n + 3) {
+  color: @color3;
+}
+
+#workspaces button:nth-child(4n + 3) {
+  color: @color4;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+  color: @color5;
+}
+
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+#clock {
+  background-color: #64727d;
+}
+
+#battery {
+  background-color: #ffffff;
+  color: @color1;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #ffffff;
+  background-color: #26a65b;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#network {
+  background-color: #2980b9;
+  color: @color2;
+}
+
+#network.disconnected {
+  background-color: #f53c3c;
+  color: @background;
+}
+
+#pulseaudio {
+  background-color: #f1c40f;
+  color: @color3;
+}
+
+#pulseaudio.muted {
+  background-color: #90b1b1;
+  color: #2a5c45;
+}
+
+#wireplumber {
+  background-color: #fff0f5;
+  color: #000000;
+}
+
+#wireplumber.muted {
+  background-color: #f53c3c;
+}
+
+#tray {
+  background-color: transparent;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+#language {
+  color: @color4;
+  min-width: 16px;
+}
+
+#backlight,
+#clock,
+#battery,
+#language,
+#network,
+#pulseaudio {
+  background-color: @background;
+  padding: 10px 15px;
+  margin-top: 5px;
+}
+
+#language {
+  border-radius: 20px 0 0 20px;
+  color: @color4;
+}
+
+#tray {
+  background-color: @background;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 10px 15px;
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Lock",
+    "exec": "swaylock -f -c 000000",
+    "icon": "/usr/share/nwg-bar/images/lock.svg"
+  },
+  {
+    "label": "Logout",
+    "exec": "pkill -u jkr",
+    "icon": "/usr/share/nwg-bar/images/logout.svg"
+  },
+  {
+    "label": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/usr/share/nwg-bar/images/restart.svg"
+  },
+  {
+    "label": "Shutdown",
+    "exec": "systemctl -i poweroff",
+    "icon": "/usr/share/nwg-bar/images/poweroff.svg"
+  }
+]
