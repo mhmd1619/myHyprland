@@ -1,1 +1,1 @@
-yay -S --needed --noconfirm google-chrome-stable visual-studio-code-bin hyprpicker nwg-displays wlogout auto-cpufreq waypaper
+paru -S --noconfirm google-chrome visual-studio-code-bin hyprpicker nwg-displays wlogout auto-cpufreq waypaper ttf-ms-win11-auto
