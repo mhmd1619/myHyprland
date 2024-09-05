@@ -1,2 +1,2 @@
-sudo systemctl enable sddm
+sudo systemctl enable gdm.service
 sudo systemctl enable bluetooth
