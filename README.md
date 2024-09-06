@@ -53,4 +53,4 @@ chmod +x install.sh
 reboot
 ```
 
-6. then run rofi-theme-selector
+5. then run rofi-theme-selector
