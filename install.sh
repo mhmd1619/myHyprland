@@ -27,10 +27,13 @@ function zsh() {
 
 function aur() {
   if command -v paru >/dev/null; then
+    cd $HOME/myHyprland
     ./paru.sh
   elif command -v yay >/dev/null; then
+    cd $HOME/myHyprland
     ./yay.sh
   else
+    cd $HOME/myHyprland
     ./aur.sh
     if [ $? -ne 0 ]; then
       echo "failed. Aborting."
