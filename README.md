@@ -22,11 +22,11 @@ This is my arch linux + hyprland setup
 - **Status bar**: Waybar
 - **Launcher**: [rofi-wayland](https://github.com/lbonn/rofi)
 - **Rofi theme**: [rofi-theme](https://github.com/newmanls/rofi-themes-collection)
-- **Shell**: fish
-- **Prompt**: oh-my-posh
+- **Shell**: zsh
+- **Prompt**: oh-my-zsh
 - **File manager**: Thunar
-- **Editor**: gedit/nano/vscode
-- **Wallpaper**: hyprpaper + waypaper
+- **Editor**: leafpad/nano/vscode
+- **Wallpaper**: swww
 - **Color picker**: hyprpicker
 - **Lock**: hyprlock
 - **Clipboard**: cliphist
