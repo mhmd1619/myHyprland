@@ -48,13 +48,9 @@ This is my arch linux + hyprland setup
 ```
 git clone https://github.com/mhmd1619/myHyprland.git
 cd myHyprland
-chmod +x *
-./packages.sh # wait to finish
-./system.sh # wait to finish
-./aur.sh # wait to finish
-./aur_packages.sh # wait to finish
+chmod +x install.sh
+./install.sh
 reboot
 ```
 
-5. after reboot i copy everything in repo/.config to .config
-6. copy rofi folder to .local/share/ then run rofi-theme-selector
+6. then run rofi-theme-selector
