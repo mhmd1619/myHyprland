@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-  background-color: rgba(39, 42, 52, 0.5);
+  background-color: rgba(39, 42, 52, 0.9);
   color: #c4c4c4;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -52,7 +52,8 @@ button:hover {
 #bluetooth {
   padding: 5px 15px;
   color: #c4c4c4;
-  background-color: rgba(39, 42, 52, 0.6);
+  background-color: rgba(39, 42, 52, 1);
+  background-color: #303440;
 }
 
 #window,
