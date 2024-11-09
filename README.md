@@ -25,7 +25,7 @@ This is my arch linux + hyprland setup
 - **Prompt**: oh-my-zsh
 - **File manager**: Thunar
 - **Editor**: leafpad/nano/vscode
-- **Wallpaper**: swww
+- **Wallpaper**: swww -> waypaper
 - **Color picker**: hyprpicker
 - **Lock**: hyprlock
 - **Clipboard**: cliphist -> nwg-clipman
