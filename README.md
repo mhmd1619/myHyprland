@@ -20,8 +20,7 @@ This is my arch linux + hyprland setup
 - **Theme**: adw-gtk-theme
 - **Icons**: [Papirus icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - **Status bar**: Waybar
-- **Launcher**: [rofi-wayland](https://github.com/lbonn/rofi)
-- **Rofi theme**: [rofi-theme](https://github.com/newmanls/rofi-themes-collection)
+- **Launcher**: wofi
 - **Shell**: zsh
 - **Prompt**: oh-my-zsh
 - **File manager**: Thunar
