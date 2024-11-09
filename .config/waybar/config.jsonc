@@ -3,14 +3,22 @@
   "position": "top",
   "height": 30,
   "spacing": 0,
-  "modules-left": ["custom/logo", "cpu", "memory", "bluetooth"],
-  "modules-center": ["hyprland/workspaces"],
+  "modules-left": [
+    "custom/logo",
+    "cpu",
+    "memory",
+    "bluetooth"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
   "modules-right": [
     "tray",
     "pulseaudio",
     "network",
     "backlight",
     "battery",
+    "power-profiles-daemon",
     "clock",
     "custom/power"
   ],
@@ -25,18 +33,28 @@
     "interval": 1
   },
   "cpu": {
-    "format": "<span font='14'> </span> {usage}%",
+    "format": "<span font='14' color='#33d17a'> </span> {usage}%",
     "tooltip": false,
     "interval": 1
   },
   "memory": {
-    "format": "<span font='14'> </span> {}%",
+    "format": "<span font='14' color='#c061cb'> </span> {}%",
     "interval": 1
   },
   "backlight": {
     // "device": "acpi_video1",
-    "format": "<span font='14'>{icon}</span>  {percent}%",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
+    "format": "<span font='14' color='#ff7800'>{icon}</span>  {percent}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "battery": {
     "interval": 1,
@@ -49,18 +67,30 @@
     "format-full": "<span font='14'>{icon}</span> {capacity}%",
     "format-charging": "<span font='14'>󰂄</span> {capacity}%",
     "format-plugged": "<span font='14'>󰂄</span> {capacity}%",
-    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰂂"]
+    "format-icons": [
+      "󰁺",
+      "󰁼",
+      "󰁾",
+      "󰂀",
+      "󰂂"
+    ]
   },
   "network": {
-    "format-wifi": "<span font='14'>{icon}</span> ",
+    "format-wifi": "<span font='14' color='#3584e4'>{icon}</span> ",
     "format-ethernet": "<span font='14'>󰈀</span>",
     "format-disconnected": "<span font='14'>󰤭</span>",
     "format-alt": "{bandwidthDownBytes}",
     "interval": 1,
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ]
   },
   "pulseaudio": {
-    "format": "<span font='14'>{icon}</span> {volume}%",
+    "format": "<span font='14' color='#f5c211'>{icon}</span> {volume}%",
     "format-muted": "<span font='14'>󰝟</span>",
     "format-source": "{volume}% ",
     "format-source-muted": "",
@@ -71,7 +101,11 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["󰕿", "󰖀", "󰕾"]
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
     },
     "on-click": "pavucontrol"
   },
@@ -82,12 +116,23 @@
   },
   "custom/logo": {
     "format": "<span font='14'>󰣇</span>",
-    "on-click": "rofi -show drun -show-icons"
+    "on-click": "wofi --show drun --allow-images"
   },
   "bluetooth": {
     "format": "<span font='14'>󰂯</span>",
     "format-disabled": "<span font='14'>󰂲</span>",
     "format-connected": "<span font='14'>󰂱</span>",
     "on-click": "blueberry"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
   }
 }
