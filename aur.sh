@@ -1,4 +1,4 @@
 cd $HOME
-git clone https://aur.archlinux.org/paru.git
-cd paru
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg --noconfirm -si
