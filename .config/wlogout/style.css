@@ -10,9 +10,9 @@ window {
 button {
   border-radius: 20px;
   margin: 2rem;
-  text-decoration-color: #ffffff;
-  color: #ffffff;
-  background-color: #272a34;
+  text-decoration-color: @theme_fg_color;
+  color: @theme_fg_color;
+  background-color: @theme_base_color;
   border-style: solid;
   border-width: 1px;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@ button {
 button:focus,
 button:active,
 button:hover {
-  background-color: #2777ff;
+  background-color: @theme_selected_bg_color;
   outline-style: none;
 }
 
