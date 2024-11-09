@@ -15,9 +15,9 @@ This is my arch linux + hyprland setup
 - **OS**: Arch Linux
 - **WM**: Hyprland
 - **Terminal**: Kitty
-- **System font**: Noto Sans
+- **System font**: Noto Sans Regular
 - **Terminal Font**: FiraCode Nerd Font
-- **Theme**: [Flat remix GTK](https://drasite.com/flat-remix-gtk)
+- **Theme**: adw-gtk-theme
 - **Icons**: [Papirus icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - **Status bar**: Waybar
 - **Launcher**: [rofi-wayland](https://github.com/lbonn/rofi)
@@ -29,7 +29,7 @@ This is my arch linux + hyprland setup
 - **Wallpaper**: swww
 - **Color picker**: hyprpicker
 - **Lock**: hyprlock
-- **Clipboard**: cliphist
+- **Clipboard**: cliphist -> nwg-clipman
 - **Wallpapers**: [Wallpaper-bank](https://github.com/JaKooLit/Wallpaper-Bank)
 - **Logout**: wlogout
 - **Bluetooth**: blueberry
@@ -48,9 +48,26 @@ This is my arch linux + hyprland setup
 ```
 git clone https://github.com/mhmd1619/myHyprland.git
 cd myHyprland
-chmod +x install.sh
-./install.sh
-reboot
+chmod +x *
+./packages.sh
+./aur.sh
+./yay.sh
+cp -r ./.config/* $HOME/.config/
 ```
 
-5. then run rofi-theme-selector
+5. install oh-my-zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+6. run sddm and bluetooth
+
+```
+sudo systemctl enable sddm
+sudo systemctl enable bluetooth
+```
+
+7. reboot.
