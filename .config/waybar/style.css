@@ -1,115 +1,143 @@
 * {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  
-  window#waybar {
-    background-color: @theme_base_color;
+    font-family: "FiraCode Nerd Font";
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: rgba(43, 48, 59, 0.5);
+    background: radial-gradient(alpha(@theme_base_color, 0.4), @theme_base_color);
     color: @theme_fg_color;
     transition-property: background-color;
-    transition-duration: 0.5s;
-  }
-  
-  button {
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
     border: none;
     border-radius: 0;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: inherit;
-  }
-  
-  #workspaces button {
-    padding: 0 7px;
+}
+
+#workspaces {
+    padding: 5px;
+}
+
+#workspaces button {
+    padding: 0 10px;
     background-color: transparent;
-    color: @theme_text_color;
-    border-radius: 5px;
-  }
-  
-  #workspaces button:hover {
+    color: @theme_fg_color;
+    border-radius: 10px;
+}
+
+#workspaces button:hover,
+#workspaces button.active {
     background: @theme_selected_bg_color;
-  }
-  
-  #workspaces button.active {
-    background-color: @theme_selected_bg_color;
-  }
-  
-  #workspaces button.urgent {
+}
+
+#workspaces button.urgent {
     background-color: #eb4d4b;
-  }
-  
-  #clock,
-  #battery,
-  #cpu,
-  #memory,
-  #backlight,
-  #network,
-  #pulseaudio,
-  #custom-media,
-  #tray,
-  #custom-power,
-  #bluetooth,
-  #power-profiles-daemon {
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+    padding: 0 10px;
+    color: @theme_fg_color;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#custom-power,
+#bluetooth,
+#power-profiles-daemon {
     padding: 5px 15px;
     color: @theme_text_color;
-    background-color: @theme_unfocused_bg_color;
+    background-color: alpha(@theme_unfocused_bg_color, 0.4);
     border-radius: 20px;
-    margin: 0 5px;
-  }
-  
-  #window,
-  #workspaces {
     margin: 0 4px;
-  }
-  
-  .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-  }
-  
-  .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-  }
-  
-  #custom-power {
+}
+
+#custom-power {
     background-color: #ed333b;
     border-radius: 20px 0 0 20px;
     transition: all 250ms ease-in-out;
-  }
-  
-  #battery.charging {
+}
+
+#battery.charging {
     color: #00ff1c;
-  }
-  
-  #clock {
+}
+
+#clock {
     border-radius: 20px;
     margin: 0 5px;
-  }
-  
-  #pulseaudio.muted {
+}
+
+#pulseaudio.muted {
     color: orange;
-  }
-  
-  #network.disconnected {
+}
+
+#network.disconnected {
     color: red;
-  }
-  
-  #tray {
+}
+
+#tray {
     border-radius: 20px;
     margin: 0 5px;
-  }
-  
-  #custom-logo {
+}
+
+#custom-logo {
     background-color: #1794d1;
     padding: 0 17px;
     border-radius: 0 20px 20px 0;
-  }
+}
 
-  #custom-power {
+#custom-power {
     margin: 0;
-  }
-  
-  #bluetooth {
+}
+
+#bluetooth {
     border-radius: 20px;
     margin: 0 5px;
-  }
+}
