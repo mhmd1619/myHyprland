@@ -8,7 +8,6 @@ This is my arch linux + hyprland setup
 <img alt="screenshot" src="./images/2.png">
 <img alt="screenshot" src="./images/3.png">
 <img alt="screenshot" src="./images/4.png">
-<img alt="screenshot" src="./images/5.png">
 
 ## Details
 
@@ -23,13 +22,13 @@ This is my arch linux + hyprland setup
 - **Launcher**: wofi
 - **Shell**: zsh
 - **Prompt**: oh-my-zsh
-- **File manager**: Thunar
-- **Editor**: leafpad/nano/vscode
+- **File manager**: Dolphin
+- **Editor**: micro/vscode
 - **Wallpaper**: swww -> waypaper
 - **Color picker**: hyprpicker
 - **Lock**: hyprlock
 - **Clipboard**: cliphist -> nwg-clipman
-- **Wallpapers**: [Wallpaper-bank](https://github.com/JaKooLit/Wallpaper-Bank)
+- **Wallpapers**: [minimalistic-wallpaper-collection](https://github.com/DenverCoder1/minimalistic-wallpaper-collection)
 - **Logout**: wlogout
 - **Bluetooth**: blueberry
 
@@ -42,31 +41,30 @@ This is my arch linux + hyprland setup
 - in profile i choose xorg and amd/ati (based on your gpu and cpu)
 - in additional packages install: git networkmanager
 
-4. after arch installed i clone this repo and run sh files to install all the packages
+4. after arch installed i clone this repo in my home and run install.sh
 
 ```
 git clone https://github.com/mhmd1619/myHyprland.git
+```
+
+```
 cd myHyprland
+```
+
+```
 chmod +x *
-./packages.sh
-./aur.sh
-./yay.sh
+```
+
+```
+./install.sh
+```
+
+```
 cp -r ./.config/* $HOME/.config/
 ```
 
-5. install oh-my-zsh
+5. reboot
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+reboot
 ```
-
-6. run sddm and bluetooth
-
-```
-sudo systemctl enable sddm
-sudo systemctl enable bluetooth
-```
-
-7. reboot.
