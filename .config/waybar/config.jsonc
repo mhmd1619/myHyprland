@@ -1,32 +1,39 @@
-// -*- mode: jsonc -*-
 {
     "layer": "top",
-    "position": "top",
-    "height": 30,
-    "spacing": 0,
+    "height": 30, // Waybar height (to be removed for auto height)
+    "spacing": 0, // Gaps between modules (4px)
     "modules-left": [
-        "custom/logo",
-        "cpu",
-        "memory",
-        "bluetooth",
-        "mpris"
+        "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        "mpris",
+        "pulseaudio",
+        "hyprland/language",
+        "hyprland/workspaces",
+        "clock",
+        "battery"
     ],
     "modules-right": [
         "tray",
-        "power-profiles-daemon",
-        "hyprland/language",
-        "pulseaudio",
-        "network",
-        "battery",
-        "clock",
-        "custom/power"
+        "bluetooth",
+        "network"
     ],
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-ar": "AR",
+        "keyboard-name": "at-translated-set-2-keyboard"
+    },
+    "hyprland/window": {
+        "format":{},
+        "max-length": 30,
+        "rewrite": {
+            "": "Desktop"
+        }
+    },
     "mpris": {
-        "format": "DEFAULT: {player_icon} {dynamic}",
-        "format-paused": "DEFAULT: {status_icon} <i>{dynamic}</i>",
+        "format": "{player_icon}",
+        "format-paused": "{status_icon}",
         "player-icons": {
             "default": "▶",
             "mpv": "🎵"
@@ -37,22 +44,13 @@
         // "ignored-players": ["firefox"]
     },
     "tray": {
-        "icon-size": 14,
+        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
         "format": "{:%I:%M:%S %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}",
-        "interval": 1
-    },
-    "cpu": {
-        "format": "<span font='14' color='#33d17a'> </span> {usage}%",
-        "tooltip": false,
-        "interval": 1
-    },
-    "memory": {
-        "format": "<span font='14' color='#c061cb'> </span> {}%",
         "interval": 1
     },
     "battery": {
@@ -62,10 +60,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "<span font='14'>{icon}</span> {capacity}%",
-        "format-full": "<span font='14'>{icon}</span> {capacity}%",
-        "format-charging": "<span font='14'>󰂄</span> {capacity}%",
-        "format-plugged": "<span font='14'>󰂄</span> {capacity}%",
+        "format": "<span font='11'>{icon}</span> {capacity}%",
+        "format-full": "<span font='11'>{icon}</span> {capacity}%",
+        "format-charging": "<span font='11'>󰂄</span> {capacity}%",
+        "format-plugged": "<span font='11'>󰂄</span> {capacity}%",
         "format-icons": [
             "󰁺",
             "󰁼",
@@ -74,27 +72,16 @@
             "󰂂"
         ]
     },
-    "power-profiles-daemon": {
-        "format": "{icon}",
-        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-        "tooltip": true,
-        "format-icons": {
-            "default": "",
-            "performance": "",
-            "balanced": "",
-            "power-saver": ""
-        }
-    },
     "network": {
-        "format-wifi": "<span font='14' color='#3584e4'></span> ",
-        "format-ethernet": "<span font='14'>󰈀</span>",
-        "format-disconnected": "<span font='14'>󰤭</span>",
+        "format-wifi": "<span font='11'></span> ",
+        "format-ethernet": "<span font='11'>󰈀</span>",
+        "format-disconnected": "<span font='11'>󰤭</span>",
         "format-alt": "{bandwidthDownBytes}",
         "interval": 1
     },
     "pulseaudio": {
-        "format": "<span font='14' color='#f5c211'>{icon}</span> {volume}%",
-        "format-muted": "<span font='14'>󰝟</span>",
+        "format": "<span font='11'>{icon}</span> {volume}%",
+        "format-muted": "<span font='11'>󰝟</span>",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -112,19 +99,10 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/power": {
-        "format": "⏻",
-        "tooltip": false,
-        "on-click": "wlogout"
-    },
-    "custom/logo": {
-        "format": "<span font='14'>󰣇</span>",
-        "on-click": "wofi --show drun --allow-images"
-    },
     "bluetooth": {
-        "format": "<span font='14'>󰂯</span>",
-        "format-disabled": "<span font='14'>󰂲</span>",
-        "format-connected": "<span font='14'>󰂱</span>",
+        "format": "<span font='11'>󰂯</span>",
+        "format-disabled": "<span font='11'>󰂲</span>",
+        "format-connected": "<span font='11'>󰂱</span>",
         "on-click": "blueberry"
     }
 }
