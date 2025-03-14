@@ -6,8 +6,6 @@ This is my arch linux + hyprland setup
 
 <img alt="screenshot" src="./images/1.png">
 <img alt="screenshot" src="./images/2.png">
-<img alt="screenshot" src="./images/3.png">
-<img alt="screenshot" src="./images/4.png">
 
 ## Details
 
@@ -16,19 +14,19 @@ This is my arch linux + hyprland setup
 - **Terminal**: Kitty
 - **System font**: Noto Sans Regular
 - **Terminal Font**: FiraCode Nerd Font
-- **Theme**: adw-gtk-theme
-- **Icons**: [Papirus icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- **Theme**: yaru-blue-dark
+- **Icons**: yaru-blue-dark
 - **Status bar**: Waybar
 - **Launcher**: wofi
-- **Shell**: zsh
-- **Prompt**: oh-my-zsh
-- **File manager**: Dolphin
+- **Shell**: fish
+- **Prompt**: starship
+- **File manager**: Nautilus
 - **Editor**: micro/vscode
 - **Wallpaper**: swww -> waypaper
 - **Color picker**: hyprpicker
 - **Lock**: hyprlock
 - **Clipboard**: cliphist -> nwg-clipman
-- **Wallpapers**: [minimalistic-wallpaper-collection](https://github.com/DenverCoder1/minimalistic-wallpaper-collection)
+- **Wallpapers**: [minimalistic-wallpaper-collection](https://github.com/DenverCoder1/minimalistic-wallpaper-collection) & from wallheven
 - **Logout**: wlogout
 - **Bluetooth**: blueberry
 
@@ -68,3 +66,5 @@ cp -r ./.config/* $HOME/.config/
 ```
 reboot
 ```
+## Shortcuts
+see hyprland.conf
