@@ -5,15 +5,15 @@
 }
 
 window#waybar {
-    background-color: rgba(34, 34, 34, 0.8);
-    color: #eee;
+    background-color: #2e3440;
+    color: #e5e9f0;
     transition-property: background-color;
     transition-duration: .5s;
 }
 
 #window {
     padding: 0 10px;
-    background-color: #222;
+    background-color: #3b4252;
     border-radius: 40px;
 }
 
@@ -28,17 +28,17 @@ button:hover {
 }
 
 #workspaces {
-    background-color: #222;
+    background-color: #3b4252;
     border-radius: 40px;
 }
 #workspaces button {
     background-color: transparent;
-    color: #eee;
+    color: #e5e9f0;
     border-radius: 50%;
 }
 #workspaces button:hover,
 #workspaces button.active {
-    background-color: #0073E5;
+    background-color: #5e81ac;
 }
 
 #workspaces button.urgent {
@@ -74,12 +74,12 @@ button:hover {
 
 #tray {
     border-radius: 40px;
-    background-color: #222;
+    background-color: #3b4252;
 }
 
 #network,
 #bluetooth {
-    background-color: #222;
+    background-color: #3b4252;
 }
 
 #network {
@@ -91,12 +91,12 @@ button:hover {
 }
 
 #clock {
-    background-color: #222;
+    background-color: #3b4252;
     border-radius: 40px;
 }
 
 #battery {
-    background-color: #222;
+    background-color: #3b4252;
     border-radius: 40px;
 }
 
@@ -105,12 +105,12 @@ button:hover {
 }
 
 #language {
-    background-color: #222;
+    background-color: #3b4252;
     border-radius: 40px;
 }
 
 #pulseaudio {
-    background-color: #222;
+    background-color: #3b4252;
     border-radius: 40px;
 }
 
@@ -119,6 +119,6 @@ button:hover {
 }
 
 #mpris {
-    background-color: #222;
+    background-color: #3b4252;
     border-radius: 30px;
 }
