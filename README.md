@@ -1,6 +1,6 @@
 # myHyprland Dotfiles
 
-This is my arch linux + hyprland setup
+This is my arch linux + hyprland setup + nordic
 
 ## Screenshots
 
@@ -14,20 +14,19 @@ This is my arch linux + hyprland setup
 - **Terminal**: Kitty
 - **System font**: Noto Sans Regular
 - **Terminal Font**: FiraCode Nerd Font
-- **Theme**: yaru-blue-dark
-- **Icons**: yaru-blue-dark
+- **Theme**: [Nordic darker](https://github.com/EliverLara/Nordic)
+- **Icons**: [papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - **Status bar**: Waybar
 - **Launcher**: wofi
 - **Shell**: fish
 - **Prompt**: starship
-- **File manager**: Nautilus
+- **File manager**: Thunar
 - **Editor**: micro/vscode
 - **Wallpaper**: swww -> waypaper
 - **Color picker**: hyprpicker
 - **Lock**: hyprlock
-- **Clipboard**: cliphist -> nwg-clipman
+- **Clipboard**: cliphist
 - **Wallpapers**: [minimalistic-wallpaper-collection](https://github.com/DenverCoder1/minimalistic-wallpaper-collection) & from wallheven
-- **Logout**: wlogout
 - **Bluetooth**: blueberry
 
 ## How I installed this
@@ -50,15 +49,11 @@ cd myHyprland
 ```
 
 ```
-chmod +x *
+chmod +x install.sh
 ```
 
 ```
 ./install.sh
-```
-
-```
-cp -r ./.config/* $HOME/.config/
 ```
 
 5. reboot
@@ -66,5 +61,11 @@ cp -r ./.config/* $HOME/.config/
 ```
 reboot
 ```
+
 ## Shortcuts
+
 see hyprland.conf
+
+## Planned
+
+- ake mpv look better
