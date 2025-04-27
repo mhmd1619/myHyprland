@@ -68,4 +68,4 @@ see hyprland.conf
 
 ## Planned
 
-- ake mpv look better
+- Make mpv look better
