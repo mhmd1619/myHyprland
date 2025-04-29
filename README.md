@@ -28,7 +28,15 @@ This is my arch linux + hyprland setup + nordic
 - **Clipboard**: cliphist
 - **Wallpapers**: [minimalistic-wallpaper-collection](https://github.com/DenverCoder1/minimalistic-wallpaper-collection) & from wallheven
 - **Bluetooth**: blueberry
-
+  
+ **Packages you can get with pacman** : 
+```bash
+sudo pacman -S hyprland kitty noto-fonts ttf-fira-code papirus-icon-theme waybar wofi fish starship thunar micro code swww blueberry
+```
+**Packages you can get with yay (or your prefered aur helper)**:
+```bash
+yay -S nordic-theme nerd-fonts-fira-code waypaper hyprpicker hyprlock cliphist minimalistic-wallpaper-collection
+```
 ## How I installed this
 
 1. Download archlinux iso
