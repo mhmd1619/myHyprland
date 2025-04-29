@@ -31,11 +31,11 @@ This is my arch linux + hyprland setup + nordic
   
  **Packages you can get with pacman** : 
 ```bash
-sudo pacman -S hyprland kitty noto-fonts ttf-fira-code papirus-icon-theme waybar wofi fish starship thunar micro code swww blueberry
+sudo pacman -S hyprland kitty noto-fonts ttf-firacode-nerd papirus-icon-theme waybar wofi fish starship thunar micro code swww blueberry
 ```
 **Packages you can get with yay (or your prefered aur helper)**:
 ```bash
-yay -S nordic-theme nerd-fonts-fira-code waypaper hyprpicker hyprlock cliphist minimalistic-wallpaper-collection
+yay -S nordic-theme waypaper hyprpicker hyprlock cliphist minimalistic-wallpaper-collection
 ```
 ## How I installed this
 
@@ -72,7 +72,27 @@ reboot
 
 ## Shortcuts
 
-see hyprland.conf
+| Shortcut                    | Action                                                      |
+|----------------------------|-------------------------------------------------------------|
+| `SUPER + RETURN`           | Launch terminal (`kitty`)                                   |
+| `SUPER + E`                | Launch file manager (`thunar`)                              |
+| `SUPER + M`                | Launch application menu (`wofi`)                            |
+| `SUPER + B`                | Launch browser (`google-chrome-stable`)                     |
+| `SUPER + L`                | Lock the screen (`hyprlock`)                                |
+| `SUPER + W`                | Logout menu (`wlogout`)                                     |
+| `SUPER + T`                | Toggle floating                                              |
+| `SUPER + F`                | Toggle fullscreen                                            |
+| `SUPER + K`                | Kill active window                                          |
+| `SUPER + DELETE`           | Exit Hyprland                                                |
+| `SUPER + SHIFT + C`        | Launch color picker (`hyprpicker`)                          |
+| `SUPER + V`                | Clipboard history via `wofi` and `cliphist`                 |
+| `Print`                    | Full screenshot (`grim`) with notification                  |
+| `SUPER + Print`           | Area screenshot (`grim + slurp`) with notification          |
+| `SUPER + SHIFT + R`        | Change wallpaper randomly (`waypaper`)                      |
+| `SUPER + P`                | Toggle pseudotiling                                         |
+| `SUPER + J`                | Toggle split layout (dwindle)                               |
+
+
 
 ## Planned
 
