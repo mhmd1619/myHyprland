@@ -37,38 +37,34 @@ sudo pacman -S hyprland kitty noto-fonts ttf-firacode-nerd papirus-icon-theme wa
 ```bash
 yay -S nordic-theme waypaper hyprpicker hyprlock cliphist minimalistic-wallpaper-collection
 ```
-## How I installed this
+## Installation process
 
-1. Download archlinux iso
-2. Configure my hard with fdisk
-3. launch archinstall script
+1. **Download and configure Arch linux**
+2. **Install hyprland and all required dependencies**
 
-- in profile i choose xorg and amd/ati (based on your gpu and cpu)
-- in additional packages install: git networkmanager
+3. **Clone dotfiles**
 
-4. after arch installed i clone this repo in my home and run install.sh
-
-```
+```bash
 git clone https://github.com/mhmd1619/myHyprland.git
 ```
+4. **Enter dotfiles' dircetory**
 
 ```
 cd myHyprland
 ```
 
+5. **Chmod and run install.sh script**
 ```
 chmod +x install.sh
-```
-
-```
 ./install.sh
 ```
 
-5. reboot
+6. **Reboot**
 
 ```
 reboot
 ```
+7. **Enjoy your new and shiny dotfiles :D**
 
 ## Shortcuts
 
