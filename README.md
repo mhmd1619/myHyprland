@@ -26,12 +26,13 @@ This is my arch linux + hyprland setup + nordic
 - **Color picker**: hyprpicker
 - **Lock**: hyprlock
 - **Clipboard**: cliphist
+- **Notification center**: swaync
 - **Wallpapers**: [minimalistic-wallpaper-collection](https://github.com/DenverCoder1/minimalistic-wallpaper-collection) & from wallheven
 - **Bluetooth**: blueberry
   
  **Packages you can get with pacman** : 
 ```bash
-sudo pacman -S hyprland kitty noto-fonts ttf-firacode-nerd papirus-icon-theme waybar wofi fish starship thunar micro code swww blueberry
+sudo pacman -S hyprland kitty noto-fonts ttf-firacode-nerd papirus-icon-theme waybar wofi fish starship thunar micro code swww blueberry swaync
 ```
 **Packages you can get with yay (or your prefered aur helper)**:
 ```bash
