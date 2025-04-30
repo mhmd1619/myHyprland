@@ -52,7 +52,8 @@ button:hover {
 #tray,
 #language,
 #bluetooth,
-#mpris {
+#mpris,
+#custom-notification {
     padding: 0 10px;
     color: #eee;
 }
@@ -119,6 +120,23 @@ button:hover {
 }
 
 #mpris {
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+#mpris.playing {
+    background-color: #3b4252;
+}
+
+#mpris.paused {
+    background-color: #3b4252;
+}
+
+#mpris.stopped {
+    background-color: #3b4252;
+}
+
+#custom-notification {
     background-color: #3b4252;
     border-radius: 30px;
 }
