@@ -75,7 +75,7 @@ pkgs=(
   starship
   nm-connection-editor
   network-manager-applet
-  mako
+  swaync
   loupe
 )
 
@@ -121,7 +121,7 @@ postInstall() {
     echo "Error: Failed to enable hyprpolkitagent.service." >&2
   fi
   xdg-user-dirs-update
-  cp -r $HOME/myHyprland/.config $HOME/.config
+  cp -r $HOME/myHyprland/.config $HOME/
 }
 
 main() {
