@@ -29,7 +29,7 @@ fi
 echo "${bold}Starting setup of Hyprland dotfiles...${normal}"
 
 # List of sub‑folders in .config to install
-declare -a apps=(hypr mpv swaync waybar wofi xfce4)
+declare -a apps=(fish hypr mpv swaync waybar wofi xfce4)
 
 for app in "${apps[@]}"; do
   SRC="$DOTFILES_DIR/$app"
