@@ -45,7 +45,7 @@ yay -S nordic-theme waypaper hyprpicker hyprlock cliphist minimalistic-wallpaper
 3. **Instal setup and installation script**
 
   ```bash
-    curl -L -O https://raw.githubusercontent.com/mhmd1619/myHyprland/development-branch/installer.sh
+    curl -L -O https://raw.githubusercontent.com/mhmd1619/myHyprland/development-branch/install.sh
   ```
    
   ```bash
