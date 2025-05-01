@@ -42,29 +42,33 @@ yay -S nordic-theme waypaper hyprpicker hyprlock cliphist minimalistic-wallpaper
 
 1. **Download and configure Arch linux**
 2. **Install hyprland and all required dependencies**
+3. **Instal setup and installation script**
 
-3. **Clone dotfiles**
+  ```bash
+    curl -L -O https://raw.githubusercontent.com/mhmd1619/myHyprland/development-branch/installer.sh
+  ```
+   
+  ```bash
+    curl -L -O https://raw.githubusercontent.com/mhmd1619/myHyprland/development-branch/setup.sh
+  ```
+4. **Run installation and setup script**
 
 ```bash
-git clone https://github.com/mhmd1619/myHyprland.git
-```
-4. **Enter dotfiles' dircetory**
-
-```
-cd myHyprland
+  bash installer.sh
 ```
 
-5. **Chmod and run install.sh script**
-```
-chmod +x install.sh
-./install.sh
+```bash
+  bash setup.sh
 ```
 
-6. **Reboot**
+**5. Wait for installation to end**
 
-```
-reboot
-```
+**6. Do whatever installer potentionally told you to**
+
+**7. Reboot**
+
+Congratulation ! You've just installed your new shiny dotfiles.
+
 7. **Enjoy your new and shiny dotfiles :D**
 
 ## Shortcuts
