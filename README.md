@@ -58,13 +58,14 @@ cd myHyprland
 chmod +x install.sh
 ./install.sh
 ```
+6. **Clone all configs into their directories**
 
-6. **Reboot**
+7. **Reboot**
 
 ```
 reboot
 ```
-7. **Enjoy your new and shiny dotfiles :D**
+8. **Enjoy your new and shiny dotfiles :D**
 
 ## Shortcuts
 
